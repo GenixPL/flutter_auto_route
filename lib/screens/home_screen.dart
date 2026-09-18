@@ -88,6 +88,12 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('sub 2'),
             ),
+            TextButton(
+              onPressed: () async {
+                const NestedRootRoute().push(context);
+              },
+              child: const Text('nested root'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(

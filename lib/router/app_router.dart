@@ -27,5 +27,16 @@ class AppRouter extends RootStackRouter {
     AutoRoute(
       page: Sub2Route.page,
     ),
+    AutoRoute(
+      page: NestedRootRoute.page,
+      children: [
+        AutoRoute(
+          page: Nested1Route.page,
+        ),
+        AutoRoute(
+          page: Nested2Route.page,
+        ),
+      ],
+    ),
   ];
 }
