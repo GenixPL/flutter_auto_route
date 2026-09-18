@@ -4,6 +4,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auto_route/router/app_router.gr.dart';
 import 'package:flutter_auto_route/screens/return_bool_screen.dart';
+import 'package:flutter_auto_route/utils/page_route_info_extensions.dart';
 import 'package:flutter_auto_route/utils/stack_router_extensions.dart';
 
 @RoutePage()
@@ -69,6 +70,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 _toast('result: $result');
               },
               child: const Text('return bool (safe push with type)'),
+            ),
+            TextButton(
+              onPressed: () async {
+                const Sub1Route().pushSafe(context);
+              },
+              child: const Text('sub 1'),
+            ),
+            TextButton(
+              onPressed: () async {
+                // INFO
+                // Different from GoRouter's go().
+                context.router.pushAll([
+                  const Sub1Route(),
+                  const Sub2Route(),
+                ]);
+              },
+              child: const Text('sub 2'),
             ),
 
             const Text('You have pushed the button this many times:'),

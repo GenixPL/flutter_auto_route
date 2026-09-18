@@ -10,22 +10,24 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 
-import 'package:auto_route/auto_route.dart' as _i5;
-import 'package:flutter/material.dart' as _i6;
+import 'package:auto_route/auto_route.dart' as _i7;
+import 'package:flutter/material.dart' as _i8;
 import 'package:flutter_auto_route/screens/home_screen.dart' as _i1;
 import 'package:flutter_auto_route/screens/return_bool_screen.dart' as _i2;
 import 'package:flutter_auto_route/screens/second_screen.dart' as _i3;
-import 'package:flutter_auto_route/screens/third_screen.dart' as _i4;
+import 'package:flutter_auto_route/screens/sub_1_screen.dart' as _i4;
+import 'package:flutter_auto_route/screens/sub_2_screen.dart' as _i5;
+import 'package:flutter_auto_route/screens/third_screen.dart' as _i6;
 
 /// generated route for
 /// [_i1.HomeScreen]
-class HomeRoute extends _i5.PageRouteInfo<void> {
-  const HomeRoute({List<_i5.PageRouteInfo>? children})
+class HomeRoute extends _i7.PageRouteInfo<void> {
+  const HomeRoute({List<_i7.PageRouteInfo>? children})
     : super(HomeRoute.name, initialChildren: children);
 
   static const String name = 'HomeRoute';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i7.PageInfo page = _i7.PageInfo(
     name,
     builder: (data) {
       return const _i1.HomeScreen();
@@ -35,13 +37,13 @@ class HomeRoute extends _i5.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i2.ReturnBoolScreen]
-class ReturnBoolRoute extends _i5.PageRouteInfo<void> {
-  const ReturnBoolRoute({List<_i5.PageRouteInfo>? children})
+class ReturnBoolRoute extends _i7.PageRouteInfo<void> {
+  const ReturnBoolRoute({List<_i7.PageRouteInfo>? children})
     : super(ReturnBoolRoute.name, initialChildren: children);
 
   static const String name = 'ReturnBoolRoute';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i7.PageInfo page = _i7.PageInfo(
     name,
     builder: (data) {
       return const _i2.ReturnBoolScreen();
@@ -51,13 +53,13 @@ class ReturnBoolRoute extends _i5.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.SecondScreen]
-class SecondRoute extends _i5.PageRouteInfo<void> {
-  const SecondRoute({List<_i5.PageRouteInfo>? children})
+class SecondRoute extends _i7.PageRouteInfo<void> {
+  const SecondRoute({List<_i7.PageRouteInfo>? children})
     : super(SecondRoute.name, initialChildren: children);
 
   static const String name = 'SecondRoute';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i7.PageInfo page = _i7.PageInfo(
     name,
     builder: (data) {
       return const _i3.SecondScreen();
@@ -66,13 +68,45 @@ class SecondRoute extends _i5.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i4.ThirdScreen]
-class ThirdRoute extends _i5.PageRouteInfo<ThirdRouteArgs> {
+/// [_i4.Sub1Screen]
+class Sub1Route extends _i7.PageRouteInfo<void> {
+  const Sub1Route({List<_i7.PageRouteInfo>? children})
+    : super(Sub1Route.name, initialChildren: children);
+
+  static const String name = 'Sub1Route';
+
+  static _i7.PageInfo page = _i7.PageInfo(
+    name,
+    builder: (data) {
+      return const _i4.Sub1Screen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i5.Sub2Screen]
+class Sub2Route extends _i7.PageRouteInfo<void> {
+  const Sub2Route({List<_i7.PageRouteInfo>? children})
+    : super(Sub2Route.name, initialChildren: children);
+
+  static const String name = 'Sub2Route';
+
+  static _i7.PageInfo page = _i7.PageInfo(
+    name,
+    builder: (data) {
+      return const _i5.Sub2Screen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i6.ThirdScreen]
+class ThirdRoute extends _i7.PageRouteInfo<ThirdRouteArgs> {
   ThirdRoute({
-    _i6.Key? key,
+    _i8.Key? key,
     required double a,
     required double b,
-    List<_i5.PageRouteInfo>? children,
+    List<_i7.PageRouteInfo>? children,
   }) : super(
          ThirdRoute.name,
          args: ThirdRouteArgs(key: key, a: a, b: b),
@@ -81,11 +115,11 @@ class ThirdRoute extends _i5.PageRouteInfo<ThirdRouteArgs> {
 
   static const String name = 'ThirdRoute';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i7.PageInfo page = _i7.PageInfo(
     name,
     builder: (data) {
       final args = data.argsAs<ThirdRouteArgs>();
-      return _i4.ThirdScreen(key: args.key, a: args.a, b: args.b);
+      return _i6.ThirdScreen(key: args.key, a: args.a, b: args.b);
     },
   );
 }
@@ -93,7 +127,7 @@ class ThirdRoute extends _i5.PageRouteInfo<ThirdRouteArgs> {
 class ThirdRouteArgs {
   const ThirdRouteArgs({this.key, required this.a, required this.b});
 
-  final _i6.Key? key;
+  final _i8.Key? key;
 
   final double a;
 
