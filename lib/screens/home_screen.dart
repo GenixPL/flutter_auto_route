@@ -45,6 +45,13 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('third'),
             ),
+            TextButton(
+              onPressed: () async {
+                final bool? result = await context.router.push<bool>(const ReturnBoolRoute());
+                _toast('result: $result');
+              },
+              child: const Text('return bool'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(
@@ -66,5 +73,13 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       _counter++;
     });
+  }
+
+  void _toast(String msg) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(msg),
+      ),
+    );
   }
 }

@@ -17,5 +17,8 @@ class AppRouter extends RootStackRouter {
     AutoRoute(
       page: ThirdRoute.page,
     ),
+    AutoRoute(
+      page: ReturnBoolRoute.page,
+    ),
   ];
 }

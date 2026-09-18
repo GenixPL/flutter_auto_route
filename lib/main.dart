@@ -3,6 +3,7 @@ import 'package:flutter_auto_route/router/app_router.dart';
 
 // TODO(genix): check return types
 // TODO(genix): check subroutes
+// TODO(genix): check sub-router
 
 void main() {
   runApp(MyApp());
