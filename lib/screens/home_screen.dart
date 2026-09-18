@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auto_route/router/app_router.gr.dart';
+import 'package:flutter_auto_route/screens/return_bool_screen.dart';
+import 'package:flutter_auto_route/utils/stack_router_extensions.dart';
 
 @RoutePage()
 class HomeScreen extends StatefulWidget {
@@ -47,10 +49,26 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             TextButton(
               onPressed: () async {
-                final bool? result = await context.router.push<bool>(const ReturnBoolRoute());
+                final bool? result = await context.router.push(const ReturnBoolRoute());
                 _toast('result: $result');
               },
               child: const Text('return bool'),
+            ),
+            TextButton(
+              onPressed: () async {
+                // type has to be specified manually
+                final bool? result = await context.router.pushSafe(const ReturnBoolRoute());
+                _toast('result: $result');
+              },
+              child: const Text('return bool (safe push)'),
+            ),
+            TextButton(
+              onPressed: () async {
+                // type is known
+                final bool? result = await const ReturnBoolRoute().pushSafe(context);
+                _toast('result: $result');
+              },
+              child: const Text('return bool (safe push with type)'),
             ),
 
             const Text('You have pushed the button this many times:'),
