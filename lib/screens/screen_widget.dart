@@ -4,9 +4,11 @@ class ScreenWidget extends StatelessWidget {
   const ScreenWidget({
     super.key,
     required this.name,
+    this.child,
   });
 
   final String name;
+  final Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,13 @@ class ScreenWidget extends StatelessWidget {
       appBar: AppBar(),
       body: SafeArea(
         child: Center(
-          child: Text(name),
+          child: Column(
+            spacing: 8,
+            children: [
+              Text(name),
+              ?child,
+            ],
+          ),
         ),
       ),
     );

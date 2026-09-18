@@ -32,6 +32,19 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('second'),
             ),
+            TextButton(
+              onPressed: () {
+                unawaited(
+                  context.router.push(
+                    ThirdRoute(
+                      a: 1,
+                      b: 2.5,
+                    ),
+                  ),
+                );
+              },
+              child: const Text('third'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(

@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_auto_route/router/app_router.gr.dart';
 
-
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {
   AppRouter();
@@ -14,7 +13,9 @@ class AppRouter extends RootStackRouter {
     ),
     AutoRoute(
       page: SecondRoute.page,
-      initial: false,
+    ),
+    AutoRoute(
+      page: ThirdRoute.page,
     ),
   ];
 }

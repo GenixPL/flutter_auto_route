@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_auto_route/router/app_router.dart';
 
 // TODO(genix): check return types
-// TODO(genix): check accepting params
 // TODO(genix): check subroutes
 
 void main() {
