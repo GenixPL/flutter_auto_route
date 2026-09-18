@@ -94,6 +94,17 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('nested root'),
             ),
+            TextButton(
+              onPressed: () async {
+                ParamRoute(
+                  pathParam1: 0,
+                  pathParam2: 'path2',
+                  queryParam1: null,
+                  queryParam2: 'query2',
+                ).push(context);
+              },
+              child: const Text('param'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(

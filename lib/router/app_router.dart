@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_auto_route/router/app_router.gr.dart';
-import 'package:flutter_auto_route/screens/sub_1_screen.dart';
+import 'package:flutter_auto_route/screens/param_screen.dart';
 
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {
@@ -37,6 +37,10 @@ class AppRouter extends RootStackRouter {
           page: Nested2Route.page,
         ),
       ],
+    ),
+    AutoRoute(
+      path: '/param/:one/:two',
+      page: ParamRoute.page,
     ),
   ];
 }
