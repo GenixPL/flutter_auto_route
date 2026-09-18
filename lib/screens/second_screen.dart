@@ -1,5 +1,6 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auto_route/screens/screen_widget.dart';
 
 @RoutePage()
 class SecondScreen extends StatelessWidget {
@@ -7,6 +8,8 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const ScreenWidget(
+      name: 'second',
+    );
   }
 }

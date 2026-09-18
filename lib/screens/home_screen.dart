@@ -1,5 +1,8 @@
-import 'package:auto_route/annotations.dart';
+import 'dart:async';
+
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auto_route/router/app_router.gr.dart';
 
 @RoutePage()
 class HomeScreen extends StatefulWidget {
@@ -23,6 +26,13 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            TextButton(
+              onPressed: () {
+                unawaited(context.router.push(const SecondRoute()));
+              },
+              child: const Text('second'),
+            ),
+
             const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
