@@ -129,6 +129,12 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('every second'),
             ),
+            TextButton(
+              onPressed: () {
+                unawaited(context.router.push(const CounterRoute()));
+              },
+              child: const Text('counter'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(

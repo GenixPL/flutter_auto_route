@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auto_route/router/app_router.dart';
 
-// TODO(genix): check subroutes
-// TODO(genix): check sub-router
-// TODO(genix): check guards
-
 void main() {
   runApp(MyApp());
 }
