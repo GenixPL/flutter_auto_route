@@ -42,5 +42,16 @@ class AppRouter extends RootStackRouter {
       path: '/param/:one/:two',
       page: ParamRoute.page,
     ),
+    RedirectRoute(
+      path: '/dupa',
+      redirectTo: '/param/1/dupa',
+    ),
+
+    // WARNING
+    // Should be the very last!
+    AutoRoute(
+      path: '*',
+      page: NotFoundRoute.page,
+    ),
   ];
 }

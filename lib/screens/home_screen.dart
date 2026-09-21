@@ -105,6 +105,18 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('param'),
             ),
+            TextButton(
+              onPressed: () async {
+                context.router.pushPath('/dupa');
+              },
+              child: const Text('/dupa'),
+            ),
+            TextButton(
+              onPressed: () async {
+                context.router.pushPath('/dupa2');
+              },
+              child: const Text('/dupa2'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(
