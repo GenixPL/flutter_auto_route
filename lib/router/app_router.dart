@@ -7,6 +7,13 @@ class AppRouter extends RootStackRouter {
   AppRouter();
 
   @override
+  final List<AutoRouteGuard> guards = [
+    // Global guards
+    //
+    // One
+  ];
+
+  @override
   List<AutoRoute> get routes => [
     AutoRoute(
       page: HomeRoute.page,

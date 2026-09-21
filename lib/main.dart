@@ -17,7 +17,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: _appRouter.config(),
+      routerConfig: _appRouter.config(
+        // INFO
+        // One can pass a Listenable that will re-trigger global guards.
+        // reevaluateListenable: Listenable.merge(),
+        // navigatorObservers: [
+        //   // Observers
+        // ],
+      ),
       theme: ThemeData(
         colorScheme: const ColorScheme.dark(
           primary: Colors.grey,
