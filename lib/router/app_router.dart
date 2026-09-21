@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_auto_route/router/app_router.gr.dart';
-import 'package:flutter_auto_route/screens/param_screen.dart';
+import 'package:flutter_auto_route/screens/every_second_screen.dart';
 
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {
@@ -45,6 +45,22 @@ class AppRouter extends RootStackRouter {
     RedirectRoute(
       path: '/dupa',
       redirectTo: '/param/1/dupa',
+    ),
+    AutoRoute(
+      page: BlockedRoute.page,
+      guards: [
+        AutoRouteGuard.simple(
+          (resolver, _) {
+            // Do nothing.
+          },
+        ),
+      ],
+    ),
+    AutoRoute(
+      page: EverySecondRoute.page,
+      guards: const [
+        EverySecondGuard(),
+      ],
     ),
 
     // WARNING

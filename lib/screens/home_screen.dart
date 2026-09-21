@@ -117,6 +117,18 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('/dupa2'),
             ),
+            TextButton(
+              onPressed: () async {
+                context.router.push(const BlockedRoute());
+              },
+              child: const Text('blocked'),
+            ),
+            TextButton(
+              onPressed: () async {
+                context.router.push(const EverySecondRoute());
+              },
+              child: const Text('every second'),
+            ),
 
             const Text('You have pushed the button this many times:'),
             Text(

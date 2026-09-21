@@ -10,110 +10,144 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 
-import 'package:auto_route/auto_route.dart' as _i12;
-import 'package:flutter/material.dart' as _i13;
-import 'package:flutter_auto_route/screens/home_screen.dart' as _i1;
-import 'package:flutter_auto_route/screens/nested_1_screen.dart' as _i2;
-import 'package:flutter_auto_route/screens/nested_2_screen.dart' as _i3;
-import 'package:flutter_auto_route/screens/nested_root_screen.dart' as _i4;
-import 'package:flutter_auto_route/screens/not_found_screen.dart' as _i5;
-import 'package:flutter_auto_route/screens/param_screen.dart' as _i6;
-import 'package:flutter_auto_route/screens/return_bool_screen.dart' as _i7;
-import 'package:flutter_auto_route/screens/second_screen.dart' as _i8;
-import 'package:flutter_auto_route/screens/sub_1_screen.dart' as _i9;
-import 'package:flutter_auto_route/screens/sub_2_screen.dart' as _i10;
-import 'package:flutter_auto_route/screens/third_screen.dart' as _i11;
+import 'package:auto_route/auto_route.dart' as _i14;
+import 'package:flutter/material.dart' as _i15;
+import 'package:flutter_auto_route/screens/blocked_screen.dart' as _i1;
+import 'package:flutter_auto_route/screens/every_second_screen.dart' as _i2;
+import 'package:flutter_auto_route/screens/home_screen.dart' as _i3;
+import 'package:flutter_auto_route/screens/nested_1_screen.dart' as _i4;
+import 'package:flutter_auto_route/screens/nested_2_screen.dart' as _i5;
+import 'package:flutter_auto_route/screens/nested_root_screen.dart' as _i6;
+import 'package:flutter_auto_route/screens/not_found_screen.dart' as _i7;
+import 'package:flutter_auto_route/screens/param_screen.dart' as _i8;
+import 'package:flutter_auto_route/screens/return_bool_screen.dart' as _i9;
+import 'package:flutter_auto_route/screens/second_screen.dart' as _i10;
+import 'package:flutter_auto_route/screens/sub_1_screen.dart' as _i11;
+import 'package:flutter_auto_route/screens/sub_2_screen.dart' as _i12;
+import 'package:flutter_auto_route/screens/third_screen.dart' as _i13;
 
 /// generated route for
-/// [_i1.HomeScreen]
-class HomeRoute extends _i12.PageRouteInfo<void> {
-  const HomeRoute({List<_i12.PageRouteInfo>? children})
+/// [_i1.BlockedScreen]
+class BlockedRoute extends _i14.PageRouteInfo<void> {
+  const BlockedRoute({List<_i14.PageRouteInfo>? children})
+    : super(BlockedRoute.name, initialChildren: children);
+
+  static const String name = 'BlockedRoute';
+
+  static _i14.PageInfo page = _i14.PageInfo(
+    name,
+    builder: (data) {
+      return const _i1.BlockedScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i2.EverySecondScreen]
+class EverySecondRoute extends _i14.PageRouteInfo<void> {
+  const EverySecondRoute({List<_i14.PageRouteInfo>? children})
+    : super(EverySecondRoute.name, initialChildren: children);
+
+  static const String name = 'EverySecondRoute';
+
+  static _i14.PageInfo page = _i14.PageInfo(
+    name,
+    builder: (data) {
+      return const _i2.EverySecondScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i3.HomeScreen]
+class HomeRoute extends _i14.PageRouteInfo<void> {
+  const HomeRoute({List<_i14.PageRouteInfo>? children})
     : super(HomeRoute.name, initialChildren: children);
 
   static const String name = 'HomeRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i1.HomeScreen();
+      return const _i3.HomeScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i2.Nested1Screen]
-class Nested1Route extends _i12.PageRouteInfo<void> {
-  const Nested1Route({List<_i12.PageRouteInfo>? children})
+/// [_i4.Nested1Screen]
+class Nested1Route extends _i14.PageRouteInfo<void> {
+  const Nested1Route({List<_i14.PageRouteInfo>? children})
     : super(Nested1Route.name, initialChildren: children);
 
   static const String name = 'Nested1Route';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i2.Nested1Screen();
+      return const _i4.Nested1Screen();
     },
   );
 }
 
 /// generated route for
-/// [_i3.Nested2Screen]
-class Nested2Route extends _i12.PageRouteInfo<void> {
-  const Nested2Route({List<_i12.PageRouteInfo>? children})
+/// [_i5.Nested2Screen]
+class Nested2Route extends _i14.PageRouteInfo<void> {
+  const Nested2Route({List<_i14.PageRouteInfo>? children})
     : super(Nested2Route.name, initialChildren: children);
 
   static const String name = 'Nested2Route';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i3.Nested2Screen();
+      return const _i5.Nested2Screen();
     },
   );
 }
 
 /// generated route for
-/// [_i4.NestedRootScreen]
-class NestedRootRoute extends _i12.PageRouteInfo<void> {
-  const NestedRootRoute({List<_i12.PageRouteInfo>? children})
+/// [_i6.NestedRootScreen]
+class NestedRootRoute extends _i14.PageRouteInfo<void> {
+  const NestedRootRoute({List<_i14.PageRouteInfo>? children})
     : super(NestedRootRoute.name, initialChildren: children);
 
   static const String name = 'NestedRootRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i4.NestedRootScreen();
+      return const _i6.NestedRootScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i5.NotFoundScreen]
-class NotFoundRoute extends _i12.PageRouteInfo<void> {
-  const NotFoundRoute({List<_i12.PageRouteInfo>? children})
+/// [_i7.NotFoundScreen]
+class NotFoundRoute extends _i14.PageRouteInfo<void> {
+  const NotFoundRoute({List<_i14.PageRouteInfo>? children})
     : super(NotFoundRoute.name, initialChildren: children);
 
   static const String name = 'NotFoundRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i5.NotFoundScreen();
+      return const _i7.NotFoundScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i6.ParamScreen]
-class ParamRoute extends _i12.PageRouteInfo<ParamRouteArgs> {
+/// [_i8.ParamScreen]
+class ParamRoute extends _i14.PageRouteInfo<ParamRouteArgs> {
   ParamRoute({
-    _i13.Key? key,
+    _i15.Key? key,
     required int pathParam1,
     required String pathParam2,
     required int? queryParam1,
     required String? queryParam2,
-    List<_i12.PageRouteInfo>? children,
+    List<_i14.PageRouteInfo>? children,
   }) : super(
          ParamRoute.name,
          args: ParamRouteArgs(
@@ -130,7 +164,7 @@ class ParamRoute extends _i12.PageRouteInfo<ParamRouteArgs> {
 
   static const String name = 'ParamRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
       final pathParams = data.inheritedPathParams;
@@ -143,7 +177,7 @@ class ParamRoute extends _i12.PageRouteInfo<ParamRouteArgs> {
           queryParam2: queryParams.optString('two'),
         ),
       );
-      return _i6.ParamScreen(
+      return _i8.ParamScreen(
         key: args.key,
         pathParam1: args.pathParam1,
         pathParam2: args.pathParam2,
@@ -163,7 +197,7 @@ class ParamRouteArgs {
     required this.queryParam2,
   });
 
-  final _i13.Key? key;
+  final _i15.Key? key;
 
   final int pathParam1;
 
@@ -199,77 +233,77 @@ class ParamRouteArgs {
 }
 
 /// generated route for
-/// [_i7.ReturnBoolScreen]
-class ReturnBoolRoute extends _i12.PageRouteInfo<void> {
-  const ReturnBoolRoute({List<_i12.PageRouteInfo>? children})
+/// [_i9.ReturnBoolScreen]
+class ReturnBoolRoute extends _i14.PageRouteInfo<void> {
+  const ReturnBoolRoute({List<_i14.PageRouteInfo>? children})
     : super(ReturnBoolRoute.name, initialChildren: children);
 
   static const String name = 'ReturnBoolRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i7.ReturnBoolScreen();
+      return const _i9.ReturnBoolScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i8.SecondScreen]
-class SecondRoute extends _i12.PageRouteInfo<void> {
-  const SecondRoute({List<_i12.PageRouteInfo>? children})
+/// [_i10.SecondScreen]
+class SecondRoute extends _i14.PageRouteInfo<void> {
+  const SecondRoute({List<_i14.PageRouteInfo>? children})
     : super(SecondRoute.name, initialChildren: children);
 
   static const String name = 'SecondRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i8.SecondScreen();
+      return const _i10.SecondScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i9.Sub1Screen]
-class Sub1Route extends _i12.PageRouteInfo<void> {
-  const Sub1Route({List<_i12.PageRouteInfo>? children})
+/// [_i11.Sub1Screen]
+class Sub1Route extends _i14.PageRouteInfo<void> {
+  const Sub1Route({List<_i14.PageRouteInfo>? children})
     : super(Sub1Route.name, initialChildren: children);
 
   static const String name = 'Sub1Route';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i9.Sub1Screen();
+      return const _i11.Sub1Screen();
     },
   );
 }
 
 /// generated route for
-/// [_i10.Sub2Screen]
-class Sub2Route extends _i12.PageRouteInfo<void> {
-  const Sub2Route({List<_i12.PageRouteInfo>? children})
+/// [_i12.Sub2Screen]
+class Sub2Route extends _i14.PageRouteInfo<void> {
+  const Sub2Route({List<_i14.PageRouteInfo>? children})
     : super(Sub2Route.name, initialChildren: children);
 
   static const String name = 'Sub2Route';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
-      return const _i10.Sub2Screen();
+      return const _i12.Sub2Screen();
     },
   );
 }
 
 /// generated route for
-/// [_i11.ThirdScreen]
-class ThirdRoute extends _i12.PageRouteInfo<ThirdRouteArgs> {
+/// [_i13.ThirdScreen]
+class ThirdRoute extends _i14.PageRouteInfo<ThirdRouteArgs> {
   ThirdRoute({
-    _i13.Key? key,
+    _i15.Key? key,
     required double a,
     required double b,
-    List<_i12.PageRouteInfo>? children,
+    List<_i14.PageRouteInfo>? children,
   }) : super(
          ThirdRoute.name,
          args: ThirdRouteArgs(key: key, a: a, b: b),
@@ -278,11 +312,11 @@ class ThirdRoute extends _i12.PageRouteInfo<ThirdRouteArgs> {
 
   static const String name = 'ThirdRoute';
 
-  static _i12.PageInfo page = _i12.PageInfo(
+  static _i14.PageInfo page = _i14.PageInfo(
     name,
     builder: (data) {
       final args = data.argsAs<ThirdRouteArgs>();
-      return _i11.ThirdScreen(key: args.key, a: args.a, b: args.b);
+      return _i13.ThirdScreen(key: args.key, a: args.a, b: args.b);
     },
   );
 }
@@ -290,7 +324,7 @@ class ThirdRoute extends _i12.PageRouteInfo<ThirdRouteArgs> {
 class ThirdRouteArgs {
   const ThirdRouteArgs({this.key, required this.a, required this.b});
 
-  final _i13.Key? key;
+  final _i15.Key? key;
 
   final double a;
 
